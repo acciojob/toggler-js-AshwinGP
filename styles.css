@@ -1,1 +1,33 @@
 /*  your css code here. If applicable */
+input{
+	width:0;
+	height:0;
+	
+}
+input:checked + label{
+	background-color:green;
+	
+}
+input:checked + label > .circle{
+	
+	right:1px;
+
+}
+label{
+	display:inline-block;
+	width:50px;
+	position:relative;
+	height:20px;
+	background-color:grey;
+	border-radius:20px;
+}
+.circle{
+	position:absolute;
+	top:0;
+	width:20px;
+	height:20px;
+	position:absolute;
+	background-color:white;
+	border-radius:10px;
+	/* left:1px */
+}
